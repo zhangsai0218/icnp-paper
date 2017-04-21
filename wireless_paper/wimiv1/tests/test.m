@@ -1,0 +1,17 @@
+buf_size=4096*128/2;
+t=[1:buf_size];
+f=10e6;
+fs=1e9;
+G=30000;
+data=int16(G*sin(2*pi*f/fs*t));
+%data=int16((1:buf_size)*256+(1:buf_size)+8);
+%data=int16(32767*ones(1,buf_size));
+rx_data=rx(data);
+subplot(2,2,1);
+plot(20*log10(abs(fft(double(rx_data(1,1000:end))))));
+subplot(2,2,2);
+plot(rx_data(1,1000:end));
+subplot(2,2,3);
+plot(20*log10(abs(fft(double(rx_data(2,1000:end))))));
+subplot(2,2,4);
+plot(rx_data(2,1000:end));

@@ -1,0 +1,25 @@
+%\documentclass[a4paper,png]{standalone}
+\documentclass[conference]{IEEEtran}
+\usepackage{array}
+
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+
+
+\begin{document}
+
+\begin{tabular}{c"c|c|c|c|c}
+    $*$ & $a$ & $b$ & $c$ & $d$ & $e$ \\\thickhline
+    $a$ & $a$ & $b$ & $c$ & $b$ & $d$ \\\hline
+    $b$ & $b$ & $c$ & $a$ & $e$ & $c$ \\\hline
+    $c$ & $c$ & $a$ & $b$ & $b$ & $a$ \\\hline
+    $d$ & $b$ & $e$ & $b$ & $e$ & $d$ \\\hline
+    $e$ & $d$ & $b$ & $a$ & $d$ & $c$
+\end{tabular}
+
+\end{document}
