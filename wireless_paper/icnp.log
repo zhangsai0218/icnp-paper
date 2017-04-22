@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.16)  21 APR 2017 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.16)  22 APR 2017 02:34
 entering extended mode
 **./icnp.tex
 (icnp.tex
@@ -1178,42 +1178,52 @@ File: brp.png Graphic file (type png)
 Package pdftex.def Info: brp.png used on input line 127.
 (pdftex.def)             Requested size: 184.93892pt x 113.80756pt.
 
-<quasiproblem.png, id=16, 659.46375pt x 470.50781pt>
-File: quasiproblem.png Graphic file (type png)
- <use quasiproblem.png>
-Package pdftex.def Info: quasiproblem.png used on input line 131.
-(pdftex.def)             Requested size: 213.39742pt x 142.25905pt.
+<motivation1.pdf, id=16, 639.02742pt x 461.87154pt>
+File: motivation1.pdf Graphic file (type pdf)
+ <use motivation1.pdf>
+Package pdftex.def Info: motivation1.pdf used on input line 131.
+(pdftex.def)             Requested size: 213.3954pt x 142.26251pt.
 
-<motivation.png, id=17, 722.7pt x 506.6428pt>
-File: motivation.png Graphic file (type png)
- <use motivation.png>
-Package pdftex.def Info: motivation.png used on input line 135.
-(pdftex.def)             Requested size: 213.39314pt x 142.26102pt.
+<motivation2.pdf, id=17, 731.86327pt x 421.75165pt>
+File: motivation2.pdf Graphic file (type pdf)
+ <use motivation2.pdf>
+Package pdftex.def Info: motivation2.pdf used on input line 135.
+(pdftex.def)             Requested size: 213.38515pt x 113.8101pt.
 
-<architecture.png, id=18, 996.72375pt x 548.0475pt>
-File: architecture.png Graphic file (type png)
- <use architecture.png>
-Package pdftex.def Info: architecture.png used on input line 139.
-(pdftex.def)             Requested size: 241.83449pt x 142.2632pt.
+<architecture1.pdf, id=18, 1002.69405pt x 580.94237pt>
+File: architecture1.pdf Graphic file (type pdf)
+ <use architecture1.pdf>
+Package pdftex.def Info: architecture1.pdf used on input line 139.
+(pdftex.def)             Requested size: 241.84486pt x 142.25677pt.
 
 [2 <./sls.png> <./brp.png>]
-<connection_protocol.png, id=24, 1096.84781pt x 445.665pt>
-File: connection_protocol.png Graphic file (type png)
+<connection_protocol.pdf, id=24, 926.49635pt x 369.36797pt>
+File: connection_protocol.pdf Graphic file (type pdf)
 
-<use connection_protocol.png>
-Package pdftex.def Info: connection_protocol.png used on input line 155.
-(pdftex.def)             Requested size: 241.84283pt x 113.80968pt.
+<use connection_protocol.pdf>
+Package pdftex.def Info: connection_protocol.pdf used on input line 155.
+(pdftex.def)             Requested size: 241.8447pt x 99.58414pt.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
- [3 <./quasiproblem.png> <./motivation.png> <./architecture.png> <./connection_
-protocol.png>]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 177.
+ [3 <./motivation1.pdf> <./motivation2.pdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\bbm\ubbm.fd"
+pdfTeX warning: pdflatex.exe (file ./motivation2.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+> <./architecture1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./architecture1.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <./connection_protocol.pdf
+
+pdfTeX warning: pdflatex.exe (file ./connection_protocol.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 177.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\bbm\ubbm.fd"
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 Overfull \hbox (13.60884pt too wide) detected at line 187
@@ -1460,7 +1470,7 @@ Underfull \hbox (badness 3364) in paragraph at lines 292--293
 OML/cmm/m/it/10 K\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 )$
  []
 
-[6] <grid.png, id=49, 589.4522pt x 536.75531pt>
+[6] <grid.png, id=194, 589.4522pt x 536.75531pt>
 File: grid.png Graphic file (type png)
  <use grid.png>
 Package pdftex.def Info: grid.png used on input line 302.
@@ -1558,7 +1568,7 @@ Underfull \hbox (badness 1648) in paragraph at lines 364--367
 gives us
  []
 
-<topology.png, id=54, 626.34pt x 435.12563pt>
+<topology.png, id=199, 626.34pt x 435.12563pt>
 File: topology.png Graphic file (type png)
  <use topology.png>
 Package pdftex.def Info: topology.png used on input line 373.
@@ -1629,151 +1639,174 @@ Overfull \hbox (1.29349pt too wide) in paragraph at lines 487--490
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<ap_sector_training.png, id=61, 1471.74844pt x 284.56313pt>
-File: ap_sector_training.png Graphic file (type png)
+<ap_sector_training.pdf, id=206, 1320.48839pt x 286.25946pt>
+File: ap_sector_training.pdf Graphic file (type pdf)
 
-<use ap_sector_training.png>
-Package pdftex.def Info: ap_sector_training.png used on input line 497.
-(pdftex.def)             Requested size: 241.8399pt x 56.90292pt.
+<use ap_sector_training.pdf>
+Package pdftex.def Info: ap_sector_training.pdf used on input line 497.
+(pdftex.def)             Requested size: 270.29889pt x 71.12788pt.
 
-<ue_sector_training.png, id=62, 911.65594pt x 258.9675pt>
-File: ue_sector_training.png Graphic file (type png)
+<ue_sector_training.pdf, id=207, 886.48187pt x 252.40096pt>
+File: ue_sector_training.pdf Graphic file (type pdf)
 
-<use ue_sector_training.png>
-Package pdftex.def Info: ue_sector_training.png used on input line 502.
-(pdftex.def)             Requested size: 184.94318pt x 56.90584pt.
+<use ue_sector_training.pdf>
+Package pdftex.def Info: ue_sector_training.pdf used on input line 503.
+(pdftex.def)             Requested size: 213.39574pt x 71.13008pt.
+ <comm3.pdf, id=208, 1185.67369pt x 863.47998pt>
+File: comm3.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
-\OT1/ptm/m/n/10 an-tenna $\OML/cmm/m/it/10 f[]$ \OT1/ptm/m/n/10 will trans-mit 
-frames through sec-tors
+<use comm3.pdf>
+Package pdftex.def Info: comm3.pdf used on input line 507.
+(pdftex.def)             Requested size: 270.29298pt x 184.93309pt.
+
+Underfull \hbox (badness 2237) in paragraph at lines 501--511
+[]\OT1/ptm/m/n/10 Similarly, for $\OML/cmm/m/it/10 UE[]sector[]train\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 f[]; f[]; []\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 , the UE
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 495--506
-\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 	 \OML/cmm/m/it/10 []; 
-f[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 []\OT1/cmr/m/n/10 ]$\OT1/ptm/m/n/10 , 
-each frame is la-beled with the
+Underfull \hbox (badness 1888) in paragraph at lines 501--511
+\OT1/ptm/m/n/10 in Al-go-rithm 1. The com-mu-ni-ca-tion pro-to-col is shown
  []
 
 
-Underfull \hbox (badness 4981) in paragraph at lines 495--506
+Underfull \hbox (badness 4981) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 the joint prob-a-bil-ity for each $\OT1/cmr/m/n/10 (\OML/cmm/m/
 it/10 AP[]ID; Sec[]AP[]ID\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
+Underfull \hbox (badness 10000) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 and rank them in de-scend-ing or-der based on the
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 495--506
+Underfull \hbox (badness 3386) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 prob-a-bil-i-ties, AP will try each $\OT1/cmr/m/n/10 (\OML/cmm/
 m/it/10 AP[]ID; Sec[]AP[]ID\OT1/cmr/m/n/10 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
+Underfull \hbox (badness 10000) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 with $\OML/cmm/m/it/10 AP[]sector[]train$\OT1/ptm/m/n/10 . If s
 ev-eral pairs have been
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 495--506
+Underfull \hbox (badness 2744) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 tried and the prob-a-bil-ity of $\OT1/cmr/m/n/10 (\OML/cmm/m/it
 /10 AP[]ID; Sec[]AP[]ID\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 is
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 495--506
+Underfull \hbox (badness 3229) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 lower than $\OML/cmm/m/it/10 P[]$\OT1/ptm/m/n/10 , tra-di-tiona
 l 802.11ad scheme will be
  []
 
 
-Underfull \hbox (badness 6110) in paragraph at lines 495--506
+Underfull \hbox (badness 6110) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 used for SLS. If $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 AP[]ID[]; S
 ec[]AP[]ID[]\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 is found
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 495--506
+Underfull \hbox (badness 3138) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 to be good and its prob-a-bil-ity is greater than $\OML/cmm/m/i
 t/10 P[]$\OT1/ptm/m/n/10 .
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 495--506
+Underfull \hbox (badness 2359) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 All the en-tries which has $\OML/cmm/m/it/10 AP[]ID \OT1/cmr/m/
 n/10 = \OML/cmm/m/it/10 AP[]ID\OMS/cmsy/m/n/10 $ \OT1/ptm/m/n/10 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
+Underfull \hbox (badness 10000) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 prob-a-bil-ity $\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/i
 t/10 AP[]ID[]; Sec[]AP[]ID[]; Sec[]UE[]ID\OT1/cmr/m/n/10 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
+Underfull \hbox (badness 10000) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 will be cal-cu-lated for each $\OML/cmm/m/it/10 Sec[]UE[]ID$\OT
 1/ptm/m/n/10 . Since
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
+Underfull \hbox (badness 10000) in paragraph at lines 501--511
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 AP[]ID[]; Sec[]AP[]ID[]\OT1
 /cmr/m/n/10 )$ \OT1/ptm/m/n/10 is a con-stant, we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
+Underfull \hbox (badness 10000) in paragraph at lines 501--511
 \OT1/ptm/m/n/10 have $\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 AP[]I
 D[]; Sec[]AP[]ID[]; Sec[]UE[]ID\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
+Underfull \hbox (badness 10000) in paragraph at lines 501--511
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Sec[]UE[]ID\OMS/cmsy/m/n/10
  j\OML/cmm/m/it/10 AP[]ID[]; Sec[]AP[]ID[]\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 . T
 hen the
  []
 
 [10]
-Overfull \hbox (15.97415pt too wide) in paragraph at lines 517--517
+Overfull \hbox (15.97415pt too wide) in paragraph at lines 522--522
 []$\OML/cmm/m/it/10 Remove\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 AP[]ID[]; Sec[]AP[
 ]ID[]; Sec[]UE[]ID[]\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 )$\O
 T1/ptm/m/n/10 ,
  []
 
+<online_state_diagram.pdf, id=212, 387.25075pt x 203.64984pt>
+File: online_state_diagram.pdf Graphic file (type pdf)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use online_state_diagram.pdf>
+Package pdftex.def Info: online_state_diagram.pdf used on input line 528.
+(pdftex.def)             Requested size: 241.85384pt x 128.04214pt.
 
+<offline_state_diagram.pdf, id=213, 296.50575pt x 228.97343pt>
+File: offline_state_diagram.pdf Graphic file (type pdf)
+
+<use offline_state_diagram.pdf>
+Package pdftex.def Info: offline_state_diagram.pdf used on input line 532.
+(pdftex.def)             Requested size: 156.49127pt x 113.81212pt.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
+ [11 <./ap_sector_training.pdf> <./ue_sector_training.pdf
+
+pdfTeX warning: pdflatex.exe (file ./ue_sector_training.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./comm3.pdf
+
+pdfTeX warning: pdflatex.exe (file ./comm3.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
+>]
 Missing character: There is no ‚ in font ptmri7t!
 Missing character: There is no Ä in font ptmri7t!
 Missing character: There is no ù in font ptmri7t!
- [11 <./ap_sector_training.png> <./ue_sector_training.png>]
-Underfull \hbox (badness 1590) in paragraph at lines 565--566
+
+Underfull \hbox (badness 1590) in paragraph at lines 579--580
 []\OT1/ptm/m/n/8 C.Y. Hong, S.Kandula, R.Mahajan, M.Zhang, V.Gill, M.Nanduri,
  []
 
 
-Overfull \hbox (10.61145pt too wide) in paragraph at lines 587--588
+Overfull \hbox (10.61145pt too wide) in paragraph at lines 601--602
 []\OT1/ptm/m/n/8 "Openflow spec-i-fi-ca-tion" : https://www.opennetworking.org/
 images/stories/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--588
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
 \OT1/ptm/m/n/8 downloads/sdn-resources/onf-specifications/openflow/openflow-spe
 c-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
 []\OT1/ptm/m/it/8 "Modeling Topol-ogy of Large In-ter-net-works"\OT1/ptm/m/n/8 
 :
  []
@@ -1798,9 +1831,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[12
-
-] (icnp.aux)
+[12 <./online_state_diagram.pdf> <./offline_state_diagram.pdf>] (icnp.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1810,11 +1841,11 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31987 strings out of 493333
- 757443 string characters out of 3139200
- 887831 words of memory out of 3000000
- 35046 multiletter control sequences out of 15000+200000
- 41582 words of font info for 88 fonts, out of 3000000 for 9000
+ 32017 strings out of 493333
+ 757934 string characters out of 3139200
+ 887830 words of memory out of 3000000
+ 35067 multiletter control sequences out of 15000+200000
+ 43896 words of font info for 97 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  62i,22n,96p,10383b,2423s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Sai\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\
@@ -1823,19 +1854,22 @@ bbm\dpi600\bbm10.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on icnp.pdf (12 pages, 916876 bytes).
+nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on icnp.pdf (12 pages, 1825329 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 437 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

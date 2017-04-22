@@ -60,7 +60,7 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{Sai Qian Zhang, Youngjune Gwon and H.T. Kung\\
+\author{Sai Qian Zhang, H.T. Kung and Youngjune Gwon\\
 \IEEEauthorblockA{Department of Computer Science\\
 Harvard University}
  %\email{\{sai.zhang, hadi.bannazadeh, alberto.leongarcia\}@mail.utoronto.ca}
@@ -128,15 +128,15 @@ Next we discuss the architecture of AutoBeam.
 	\caption[U-example]{Beam Refinement phase}
 \end{figure}
 \begin{figure}
-	\centerline{\includegraphics[width=7.5cm,height=5cm]{quasiproblem}}
+	\centerline{\includegraphics[width=7.5cm,height=5cm]{motivation1}}
 	\caption[U-example]{Bias caused by quasi-omni-directional antenna pattern}
 \end{figure}
 \begin{figure}[t!]
-	\centerline{\includegraphics[width=7.5cm,height=5cm]{motivation}}
+	\centerline{\includegraphics[width=7.5cm,height=4cm]{motivation2}}
 	\caption[U-example]{Spatial correlation on the AP and sector selection}
 \end{figure}
 \begin{figure}[t!]
-	\centerline{\includegraphics[width=8.5cm,height=5cm]{architecture}}
+	\centerline{\includegraphics[width=8.5cm,height=5cm]{architecture1}}
 	\caption[U-example]{Architecture of AutoBeam}
 \end{figure}
 %\begin{figure}
@@ -152,7 +152,7 @@ In case of mobile UE, a localization system will track the moving devices and re
 %The best AP from beam selection map will send the updated optimal sector ID to UE through WiFi. The selected AP and UE will connect by using the updated Tx sectors. 
 Given the localization latency of modern localization system is normally within 0.1s[], and whole SLS phase can be skipped, we believe that this tradeoff is reasonable. 
 \begin{figure}
-	\centerline{\includegraphics[width=8.5cm,height=4cm]{connection_protocol}}
+	\centerline{\includegraphics[width=8.5cm,height=3.5cm]{connection_protocol}}
 	\caption[U-example]{Connection Protocol}
 \end{figure}
 
@@ -492,16 +492,21 @@ After getting $B^{AP\_Sec}_{v}$, we are ready for presenting the protocol of bea
 	\caption{Communication Protocol of Beamforming (CPB)}
 \end{algorithm}
 
-During $AP\_sector\_train(f_{1},f_{2},\xi_{AP})$, the corresponding antenna $f_{1}$ will transmit frames through sectors $[f_{2}\ominus \xi_{AP},f_{2}\oplus \xi_{AP}]$, each frame is labeled with the corresponding sector ID. If UE does not receive the frames from AP, it broadcast with a ACK frame with ACK = 0 through WiFi after RTT, so that all the APs can receive this ACK. The ACK frame also contains the index of the next entry in $B_{v}^{AP\_Sec}$. Once AP receive this ACK frame, the next pair of $f_{1},f_{2}$ will be tried based on Algorithm 5 (Figure $9(a)$). If UE receives the frames with satisfied SNR, it reply with a ACK frame with ACK = 1 through WiFi (Figure $9(b)$). After AP receiving the ACK frame, it will send the $B^{UE\_Sec}_{v}$, which contains a ranked list of UE transmit sectors to UE through mm-wave band (Figure $9(c)$). 
+During $AP\_sector\_train(f_{1},f_{2},\xi_{AP})$, the corresponding antenna $f_{1}$ will transmit frames through sectors $[f_{2}\ominus \xi_{AP},f_{2}\oplus \xi_{AP}]$, each frame is labeled with the corresponding sector ID. If UE does not receive the frames from AP, it broadcast with a ACK frame with ACK = 0 through WiFi after RTT, so that all the APs can receive this ACK. The ACK frame also contains the index of the next entry in $B_{v}^{AP\_Sec}$. Once AP receive this ACK frame, the next pair of $f_{1},f_{2}$ will be tried based on Algorithm 5 (Figure $9(a)$). If UE receives the frames with satisfied SNR, it reply with a ACK frame with ACK = 1 through WiFi (Figure $9(b)$). After AP receiving the ACK frame, it will send the $B^{UE\_Sec}_{v}$, which contains a ranked list of UE transmit sectors to UE through mm-wave band (Figure $9(c)$), the communication protocol is shown in Figure $11(a)$.
 \begin{figure}
-	\centerline{\includegraphics[width=8.5cm,height=2cm]{ap_sector_training}}
+	\centerline{\includegraphics[width=9.5cm,height=2.5cm]{ap_sector_training}}
 	\caption[U-example]{AP transmit sector training procedure}
 \end{figure}
-Similarly, for $UE\_sector\_train(f_{1},f_{2},\xi_{Sec})$, the UE will transmit frames through sectors $[f_{2}\ominus \xi_{Sec},f_{2}\oplus \xi_{Sec}]$, each frame is labeled with the corresponding sector ID. If AP receives the frames with enough SNR, it reply with a ACK frame with success = 1 through mm-wave band (Figure $10(a)$), since the connection from AP to UE is already set up (? Receiver sector training). If AP does not receive the frames from AP, it reply with a ACK frame with success = 0 through mm-wave band after RTT (Figure $10(b)$). Once AP receive this ACK frame, the next $f_{1}$ will be tried as indicated in Algorithm 1. 
+
+Similarly, for $UE\_sector\_train(f_{1},f_{2},\xi_{Sec})$, the UE will transmit frames through sectors $[f_{2}\ominus \xi_{Sec},f_{2}\oplus \xi_{Sec}]$, each frame is labeled with the corresponding sector ID. If AP receives the frames with enough SNR, it reply with a ACK frame with success = 1 through mm-wave band (Figure $10(a)$), since the connection from AP to UE is already set up (? Receiver sector training). If AP does not receive the frames from AP, it reply with a ACK frame with success = 0 through mm-wave band after RTT (Figure $10(b)$). Once AP receive this ACK frame, the next $f_{1}$ will be tried as indicated in Algorithm 1. The communication protocol is shown in Figure $11(b)$
  \begin{figure}
- 	\centerline{\includegraphics[width=6.5cm,height=2cm]{ue_sector_training}}
+ 	\centerline{\includegraphics[width=7.5cm,height=2.5cm]{ue_sector_training}}
  	\caption[U-example]{UE transmit sector training procedure}
  \end{figure}
+\begin{figure}
+	\centerline{\includegraphics[width=9.5cm,height=6.5cm]{comm3}}
+	\caption[U-example]{An example which shows the procedure of AP sector training and UE sector training. Assume a $UE$ wants to make connection with one of the two APs. $(c)$ shows the top two entries of $B_{v}^{AP\_Sec}$ and $B_{v}^{UE\_Sec}$, and assume $\xi_{AP} = \xi_{UE} = 1$. $(a)$ shows the communication protocol for AP sector training and $(b)$ shows the communication protocol for UE sector training.}
+\end{figure}
 Start from beginning, AP will calculate the joint probability for each $(AP\_ID,Sec\_AP\_ID)$, and rank them in descending order based on the probabilities, AP will try each $(AP\_ID,Sec\_AP\_ID)$ with $AP\_sector\_train$. If several pairs have been tried and the probability of $(AP\_ID,Sec\_AP\_ID)$ is lower than $P_{TH}$, traditional 802.11ad scheme will be used for SLS. If $(AP\_ID^{*},Sec\_AP\_ID^{*})$ is found to be good and its probability is greater than $P^{1}_{TH}$. All the entries which has $AP\_ID=AP\_ID*$ and $Sec\_AP\_ID=Sec\_AP\_ID^{*}$ will be filtered and the joint probability $P(AP\_ID^{*},Sec\_AP\_ID^{*},Sec\_UE\_ID)$ will be calculated for each $Sec\_UE\_ID$. Since $P(AP\_ID^{*},Sec\_AP\_ID^{*})$ is a constant, we have $P(AP\_ID^{*},Sec\_AP\_ID^{*},Sec\_UE\_ID)\propto P(Sec\_UE\_ID|AP\_ID^{*},Sec\_AP\_ID^{*})$. Then the entries will be ranked in descending order based on the joint probability and UE will try each $Sec\_UE\_ID$ with $UE\_sector\_train$.  If several pairs have been tried and the probability of $P(AP\_ID*,Sec\_AP\_ID*,Sec\_UE\_ID)$ is lower than $P^{2}_{TH}$, traditional 802.11ad scheme will be used for SLS from UE to AP.  
 \subsection{Online Communication Protocol for Beam Adjustment}
 AutoBeam also enables fast beam adjustment when environment changes (i.e. human blockage), the protocol is described in Algorithm 6.
@@ -516,8 +521,17 @@ AutoBeam also enables fast beam adjustment when environment changes (i.e. human 
 	}
 	\caption{Online Communication Protocol for Beamforming (OCPB)}
 \end{algorithm}
-In $OCPB$, if the throughput (both sides?) $\alpha_{v}$  of $v$ is less than a threshold $\alpha_{TH}$, the beam adjustment process will be triggered. It removes the current beam selection from the beam selection map $B_{v}$, and perform OSA and CPB. The state diagrams for online and offline operation is shown Figure 11 and Figure 12.
+For the online operation, if the throughput (both sides?) $\alpha_{v}$ of $v$ is less than a threshold $\alpha_{TH}$, the beam adjustment process will be triggered. $OCPB$ removes the current beam selection from the beam selection map $B_{v}$ and re-normalize the probabilities in $B_{v}$, $OSA$ will generate the updated $B^{AP\_Sec}_{v}$ from $B_{v}$ and after $CPB$ the next best beam selection will be used. The state diagrams for online operation is shown Figure 12.
 
+For the offline operation, $OTA$ trains the CRF model and return the trained CRF1 and CRF2 model to $OIA$, $OIA$ will use the trained CRF1 and CRF2, together with the ground truth beam selections of the samples to generate the beam selection map for the rest of the points. Once the sample set is updated, $CPB$ will transmit the new sample set $S$ and their ground truth beam selection $x_{S}^{*}$ to $OIA$. $OIA$ will generate the updated beam selection map $B_{v}$ and send it to $OSA$, $OSA$ will generate the updated $B^{AP\_Sec}_{v}$ and send it to $CPB$. The state diagrams for offline operation is shown Figure 13.
+\begin{figure}
+	\centerline{\includegraphics[width=8.5cm,height=4.5cm]{online_state_diagram}}
+	\caption[U-example]{State diagram which shows the online operation}
+\end{figure}
+\begin{figure}
+	\centerline{\includegraphics[width=5.5cm,height=4cm]{offline_state_diagram}}
+	\caption[U-example]{State diagram which shows the offline operation}
+\end{figure}
 \begin{thebibliography}{1}
 
 \bibitem{IEEEhowto:kopka}
